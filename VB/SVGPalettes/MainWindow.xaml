@@ -1,0 +1,47 @@
+﻿<dx:ThemedWindow
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:SVGPalettes"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+	xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+    xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+    xmlns:dxgt="http://schemas.devexpress.com/winfx/2008/xaml/grid/themekeys"
+    xmlns:dxet="http://schemas.devexpress.com/winfx/2008/xaml/editors/themekeys"
+    xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon"
+    x:Class="SVGPalettes.MainWindow"
+    Title="DXApplication" Height="700" Width="1100"
+    SnapsToDevicePixels="True" UseLayoutRounding="True">
+
+    <Grid>
+        <dxb:BarManager x:Name="barManager">
+            <DockPanel>
+                <dxr:RibbonControl x:Name="ribbonControl1" RibbonStyle="Office2010" DockPanel.Dock="Top">
+                    <dxr:RibbonDefaultPageCategory>
+                        <dxr:RibbonPage Name="Home" Caption="Home">
+                            <dxr:RibbonPageGroup Caption="Buttons">
+                                <dxb:BarButtonItem Content="Office2016White" ItemClick="OnOffice2016WhiteBarItemClick"/>
+                                <dxb:BarButtonItem Content="Office2016Black" ItemClick="OnOffice2016BlackBarItemClick"/>
+                            </dxr:RibbonPageGroup>
+                        </dxr:RibbonPage>
+                    </dxr:RibbonDefaultPageCategory>
+                </dxr:RibbonControl>
+                <Grid>
+                    <Image Source="{dx:SvgImageSource Uri=Images/atc-logo.svg}" Width="164" 
+                           dx:SvgImageHelper.State="{Binding Path=(dx:ThemeManager.TreeWalker).ThemeName, RelativeSource={RelativeSource Self}}">
+                        <dx:WpfSvgPalette.Palette>
+                            <dx:WpfSvgPalette>
+                                <dx:WpfSvgPalette.States>
+                                    <dx:WpfSvgPalette x:Key="Office2016Black">
+                                        <SolidColorBrush x:Key="#333333" Color="#FFFFFE"/>
+                                    </dx:WpfSvgPalette>
+                                </dx:WpfSvgPalette.States>
+                            </dx:WpfSvgPalette>
+                        </dx:WpfSvgPalette.Palette>
+                    </Image>
+                </Grid>
+            </DockPanel>
+        </dxb:BarManager>
+    </Grid>
+</dx:ThemedWindow>
