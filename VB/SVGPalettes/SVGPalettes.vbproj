@@ -181,7 +181,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\atc-logo.svg" />
+    <Resource Include="Images\logo.svg" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
