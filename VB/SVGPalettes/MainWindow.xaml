@@ -28,7 +28,7 @@
                     </dxr:RibbonDefaultPageCategory>
                 </dxr:RibbonControl>
                 <Grid>
-                    <Image Source="{dx:SvgImageSource Uri=Images/atc-logo.svg}" Width="164" 
+                    <Image Source="{dx:SvgImageSource Uri=Images/logo.svg}" Width="164" 
                            dx:SvgImageHelper.State="{Binding Path=(dx:ThemeManager.TreeWalker).ThemeName, RelativeSource={RelativeSource Self}}">
                         <dx:WpfSvgPalette.Palette>
                             <dx:WpfSvgPalette>
