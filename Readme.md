@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [MainWindow.xaml](./CS/SVGPalettes/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/SVGPalettes/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/SVGPalettes/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/SVGPalettes/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/SVGPalettes/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/SVGPalettes/MainWindow.xaml.vb))
 <!-- default file list end -->
 # How to replace colors for SVG images using palettes
 
