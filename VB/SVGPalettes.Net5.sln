@@ -1,8 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 16
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SVGPalettes", "SVGPalettes\SVGPalettes.vbproj", "{15A0B679-5A23-4E98-9BEC-E934DC0B8CF3}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SVGPalettes", "SVGPalettes\SVGPalettes.Net5.vbproj", "{15A0B679-5A23-4E98-9BEC-E934DC0B8CF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
