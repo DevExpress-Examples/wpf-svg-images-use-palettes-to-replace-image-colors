@@ -1,9 +1,11 @@
-﻿Imports DevExpress.Xpf.Core
+Imports DevExpress.Xpf.Core
 
 Namespace SVGPalettes
-    Partial Public Class MainWindow
+
+    Public Partial Class MainWindow
+
         Public Sub New()
-            InitializeComponent()
+            Me.InitializeComponent()
         End Sub
 
         Private Sub OnOffice2016WhiteBarItemClick(ByVal sender As Object, ByVal e As DevExpress.Xpf.Bars.ItemClickEventArgs)
