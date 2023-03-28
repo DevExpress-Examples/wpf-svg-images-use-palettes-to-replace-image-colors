@@ -10,7 +10,14 @@ This example demonstrates how to change SVG image colors for a theme.
 
 ![image](https://user-images.githubusercontent.com/65009440/227927881-0a1a5a49-dbf6-4384-95b1-2ccb583106d8.png)
 
-The following code sample adds an additional image state. The `dx:SvgImageHelper.State` attached property applies this state if the application theme name equals the `WpfSvgPalette.Key` property value (**Office2016Black** in this example). The `SolidColorBrush.Key` property specifies the color replaced with the `SolidColorBrush.Color` property. This example changes the color from **#333333** to **#FFFFFE**:
+[DevExpress Themes](https://docs.devexpress.com/WPF/7406/common-concepts/themes) can adapt an SVG image's colors to the application theme. You can create image states that define how to change image colors based on the applied theme:
+
+1. Create an image state.
+2. Specify the `WpfSvgPalette.Key` property to identify the state.
+3. Define a [Brush](https://learn.microsoft.com/en-us/dotnet/api/system.windows.media.brush) that replaces colors. The `SolidColorBrush.Key` property specifies the color replaced with the `SolidColorBrush.Color` property.
+4. Attach the `dx:SvgImageHelper.State` property to the image. This property applies the state based on its `Key` property value.
+
+This example changes the color from **#333333** to **#FFFFFE** if the **Office2016Black** theme is applied:
 
 ```xaml
 <Image Source="{dx:SvgImageSource Uri=Images/logo.svg}" Width="164" 
